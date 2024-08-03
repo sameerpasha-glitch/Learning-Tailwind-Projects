@@ -1,0 +1,44 @@
+/** @format */
+
+body {
+  background-color: thistle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  font-size: x-large;
+  width: 180px;
+  height: 30px;
+  margin: auto;
+  text-shadow: 2px 1px red 0px 0px 0px gold;
+  padding: 10px;
+  text-indent: 5%;
+}
+.box {
+  border: 2px solid black;
+  width: 20%;
+  height: 40%;
+  margin: 60px;
+  text-align-last: center;
+  text-decoration: underline;
+  text-shadow: 1px 3px 5px orange;
+  background-color: slategrey;
+  border-radius: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  border-radius: 10%;
+  width: 200px;
+  height: 250px;
+}
+div:hover {
+  transition: ease-in-out 3ms;
+  cursor: pointer;
+  color: gold;
+}
+button,
+nav {
+  text-shadow: 2px 1px 3px red;
+}

@@ -1,0 +1,41 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="sign.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign-up</title>
+  </head>
+  <body>
+    <div class="sign">
+      <h1>Sign Up</h1>
+      <form action="" method="post"></form>
+      <label for="">Enter Username:</label>
+      <input type="text" id="name" placeholder="Enter Your Name" />
+      <br /><br />
+      <label for="">Enter Password</label>
+      <input type="password " placeholder="Enter Your Password" />
+      <br /><br />
+      <input
+        type="button"
+        onclick="alert('REGISTERED successfully')"
+        id="b1"
+        value="Submit"
+        style="position: fixed 20px" />
+      <script>
+        function validate() {
+          var user = document.getElementById("username").value;
+          var pwd = document.getElementById("password").value;
+          if (user == "bca064" && pwd == "0043") {
+            alert("login success");
+            window.open("p1.html", "_self");
+          } else {
+            alert("invalid credentials");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

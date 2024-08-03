@@ -1,32 +1,42 @@
-.container{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:white;
-}
-.s1{
-    margin-left: 15%;
-    flex-direction: wrap;
-    text-align:left;
-}
-.s2:hover{
-    background-color: red;
-    transition: 5ms ease-in;
-}
-.n1{
-    display: flex;
-    align-items:center;
-    justify-content:space-evenly;
-    font-family:'Courier New', Courier, monospace;
-    font-size: x-large;
-    background-color: aquamarine;
-    text-emphasis-color: red;
-}
-td{
+/** @format */
 
-    background-color: aqua;
+.container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
 }
-caption{
-    color: lawngreen;
+.s1 {
+  margin-left: 15%;
+  flex-direction: wrap;
+  text-align: left;
 }
-table{
-    border-color: red;
+.s2:hover {
+  background-color: red;
+  transition: 5ms ease-in;
+}
+.n1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+  background-color: aquamarine;
+  text-emphasis-color: red;
+}
+td {
+  background-color: aqua;
+}
+caption {
+  color: lawngreen;
+}
+table {
+  border-color: red;
+}
+h2,
+li {
+  text-align: left;
+  margin-left: 15%;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
 }

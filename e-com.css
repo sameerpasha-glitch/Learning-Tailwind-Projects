@@ -1,0 +1,23 @@
+/** @format */
+div ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  background-color: #708097;
+  color: whitesmoke;
+}
+div li:hover {
+  color: red;
+  transition: ease-in-out 3ms;
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+  overflow: hidden;
+}
+img {
+  border-radius: 100%;
+}
+a:visited {
+  color: red;
+}

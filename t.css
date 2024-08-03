@@ -1,0 +1,189 @@
+/** @format */
+body {
+  background-color: white;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 90px;
+  gap: 20px; /* adjusted gap value */
+  border: 3px solid black;
+  background-color: skyblue;
+  border-radius: 50px;
+}
+a {
+  text-decoration: none;
+  color: yellow;
+  margin-left: 10px; /* adjusted margin value */
+}
+a:hover {
+  color: aqua;
+  transition: 2ms ease-in-out;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.s1 {
+  color: red;
+  width: auto;
+  border: 1px solid white;
+  border-radius: 10px; /* adjusted border-radius value */
+  padding: 5px;
+}
+.dropdown:hover {
+  color: aqua;
+  transition: 3ms ease-in-out;
+  cursor: pointer;
+}
+.dropbtn {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media only screen and (max-width: 100%) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 100%) {
+  .responsive {
+    width: 100%;
+  }
+}
+.left {
+  float: left;
+  max-width: 25%;
+  padding: 15px 10px;
+  margin: 44px;
+  font-weight: bold;
+  border: 1px solid yellowgreen;
+  text-align: center;
+  background-color: white;
+}
+#c1 {
+  color: red;
+}
+#c2 {
+  color: #3e8e41;
+}
+#c3 {
+  color: rgb(225, 158, 35);
+}
+#c4 {
+  color: hsla(99%, 83%, 5%, 0.9);
+}
+.center {
+  text-align: center;
+  width: 70%;
+  border: 2px dotted purple;
+  margin: 60px;
+  padding: 15px 10px;
+}
+a.one:link {
+  color: red;
+  font-weight: bolder;
+}
+a.two:hover {
+  color: hotpink;
+  font-family: monospace;
+}
+a.tre:visited {
+  background-color: #3e8e41;
+  color: #3e8e41;
+  font-size: x-large;
+}
+a.fr:active {
+  color: black;
+}
+h3 {
+  color: blanchedalmond;
+  text-decoration: line-through;
+}
+h4 {
+  background-color: red;
+  /*
+  text-align: right;
+  font-family: monospace;
+  */
+}
+.p1::first-letter {
+  font-size: 3em;
+  color: coral;
+}
+.p2::first-line {
+  color: red;
+  text-transform: lowercase;
+}
+.p3::before {
+  content: "Hello:-";
+}
+.p4::after {
+  content: ":-)";
+}
+.right {
+  text-align: center;
+  float: right;
+  padding: 15px 10px;
+  width: 337px;
+  height: 530px;
+  display: block;
+  border: 1px solid red;
+  margin: -620px 10px;
+  background-color: white;
+}
+img {
+  width: 180px;
+  height: 150px;
+  opacity: 0.5;
+  background-color: white;
+}
+img:hover {
+  opacity: 1;
+  border-color: red;
+  transition: 3ms ease-in black;
+}

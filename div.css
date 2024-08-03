@@ -1,0 +1,23 @@
+/** @format */
+
+body {
+  background-color: white;
+  margin: 2%;
+}
+button {
+  border: none;
+  width: auto;
+  height: auto;
+  color: black;
+  padding: 10px 15px;
+  background-color: gray;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  display: none;
+  position: absolute;
+  min-width: 100px;
+}

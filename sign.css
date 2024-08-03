@@ -1,0 +1,19 @@
+/** @format */
+
+* {
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+div {
+  border: 1px solid black;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  margin: 15% 40%;
+  background-color: darkgray;
+  padding: 30px 30px 5px 40px;
+  outline: 2px solid red;
+}
+h1 {
+  text-shadow: 2px 2px 5px orangered, 3px 1px 2px red;
+}

@@ -1,0 +1,11 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+.btn {
+  @apply hover:bg-red-500 hover:text-black;
+}
+.btn1 {
+  @apply hover:bg-black hover:text-white;
+}
+@tailwind utilities;

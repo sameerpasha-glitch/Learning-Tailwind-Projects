@@ -9,4 +9,17 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  variants: {},
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".backdrop-blur": {
+            "backdrop-filter": "blur(10px)",
+          },
+        },
+        ["responsive", "hover"]
+      );
+    },
+  ],
 };

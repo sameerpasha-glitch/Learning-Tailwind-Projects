@@ -1,0 +1,349 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify.com</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="">
+    <nav class="flex justify-between bg-gray-400 pb-4" style="fill: #b3b3b3">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgdmlld0JveD0iMCAwIDI0IDI0IiBhcmlhLWxhYmVsPSJTcG90aWZ5IiBhcmlhLWhpZGRlbj0iZmFsc2UiIGhlaWdodD0iMTAwJSIgZGF0YS1lbmNvcmUtaWQ9ImxvZ29TcG90aWZ5IiBjbGFzcz0iU3ZnLXNjLTZjM2Mxdi0wIGpsR1FUQSIgc3R5bGU9ImZpbGw6IHdoaXRlOyI+PHRpdGxlPlNwb3RpZnk8L3RpdGxlPjxwYXRoIGQ9Ik0xMy40MjcuMDFDNi44MDUtLjI1MyAxLjIyNCA0LjkwMi45NjEgMTEuNTI0LjY5OCAxOC4xNDcgNS44NTMgMjMuNzI4IDEyLjQ3NiAyMy45OWM2LjYyMi4yNjMgMTIuMjAzLTQuODkyIDEyLjQ2Ni0xMS41MTRTMjAuMDQ5LjI3MiAxMy40MjcuMDFtNS4wNjYgMTcuNTc5YS43MTcuNzE3IDAgMCAxLS45NzcuMjY4IDE0LjQgMTQuNCAwIDAgMC01LjEzOC0xLjc0NyAxNC40IDE0LjQgMCAwIDAtNS40Mi4yNjMuNzE3LjcxNyAwIDAgMS0uMzM4LTEuMzkyYzEuOTUtLjQ3NCAzLjk1NS0uNTcxIDUuOTU4LS4yOSAyLjAwMy4yODIgMy45MDMuOTI4IDUuNjQ3IDEuOTJhLjcxNy43MTcgMCAwIDEgLjI2OC45NzhtMS41NzctMy4xNWEuOTMuOTMgMCAwIDEtMS4yNjIuMzc2IDE3LjcgMTcuNyAwIDAgMC01Ljk3Mi0xLjk2IDE3LjcgMTcuNyAwIDAgMC02LjI4MS4yMzguOTMuOTMgMCAwIDEtMS4xMS0uNzEuOTMuOTMgMCAwIDEgLjcxLTEuMTEgMTkuNSAxOS41IDAgMCAxIDYuOTQtLjI2MiAxOS41IDE5LjUgMCAwIDEgNi41OTkgMi4xNjVjLjQ1Mi4yNDUuNjIuODEuMzc2IDEuMjYzbTEuNzQ4LTMuNTUxYTEuMTQ3IDEuMTQ3IDAgMCAxLTEuNTQ2LjQ4OCAyMS40IDIxLjQgMCAwIDAtNi45MTgtMi4yMDggMjEuNCAyMS40IDAgMCAwLTcuMjU5LjIxNSAxLjE0NiAxLjE0NiAwIDAgMS0uNDU2LTIuMjQ2IDIzLjcgMjMuNyAwIDAgMSA4LjAzNC0uMjQgMjMuNyAyMy43IDAgMCAxIDcuNjU3IDIuNDQ1Yy41NjEuMjkyLjc4Ljk4NC40ODggMS41NDZtMTMuNjEyLS4wMzYtLjgzMi0uMjQ3Yy0xLjY3LS40OTUtMi4xNC0uNjgxLTIuMTQtMS4zNTMgMC0uNjM3LjcwOC0xLjMyNyAyLjI2NC0xLjMyNyAxLjUzOSAwIDIuODM5Ljc1MiAzLjUxIDEuMzEuMTE2LjA5Ni4yNC4wNTIuMjQtLjA5OFY2LjkzNWMwLS4wOTctLjAyNy0uMTUtLjA5OC0uMjAzLS44My0uNjItMi4yNzItMS4wNy0zLjcyMy0xLjA3LTIuOTUzIDAtNC43MjIgMS42OC00LjcyMiAzLjU5IDAgMi4xNTcgMS4zNzEgMi45MSAzLjYyNiAzLjU0NmwuOTczLjI3NGMxLjY4OS40NzggMS45OTguOTAyIDEuOTk4IDEuNTU2IDAgMS4wOTctLjgzMSAxLjQzMy0yLjA3IDEuNDMzLTEuNTU2IDAtMy40NTctLjkxMS00LjM1LTIuMDI1LS4wOC0uMDk4LS4xNzctLjA1My0uMTc3LjA2MnYyLjQyM2MwIC4wOTcuMDEuMTQxLjA4LjIyLjc0My44MTQgMi41MiAxLjUzIDQuNTkgMS41MyAyLjU0NiAwIDQuNDU2LTEuNDg1IDQuNDU2LTMuNzg0IDAtMS43ODctMS4wNTItMi44NjUtMy42MjUtMy42MzVtMTAuMTA3LTEuNzZjLTEuNjggMC0yLjY1MyAxLjAyNi0zLjIxOSAyLjA1MlY5LjM3NmMwLS4wOC0uMDQ0LS4xMjQtLjEyNC0uMTI0aC0yLjIyYy0uMDc5IDAtLjEyMy4wNDQtLjEyMy4xMjRWMjAuNzJjMCAuMDguMDQ0LjEyNC4xMjQuMTI0aDIuMjJjLjA3OSAwIC4xMjMtLjA0NC4xMjMtLjEyNHYtNC41MzZjLjU2NiAxLjAyNSAxLjUyMSAyLjAzNCAzLjIzNyAyLjAzNCAyLjI2NCAwIDMuODktMS45NTUgMy44OS00LjU4MXMtMS42NDQtNC41NDUtMy45MDgtNC41NDVtLS42NTQgNi45ODZjLTEuMTg1IDAtMi4yMTEtMS4xNjctMi42MTgtMi40NTguNDA3LTEuMzYyIDEuMzQ0LTIuNDA1IDIuNjE4LTIuNDA1IDEuMjExIDAgMi4wNTEuOTIgMi4wNTEgMi40MjNzLS44NCAyLjQ0LTIuMDUxIDIuNDRtNDAuNjMzLTYuODI2aC0yLjI2NGMtLjA4IDAtLjExNS4wMTctLjE1LjA5N2wtMi4yODIgNS40ODMtMi4yOS01LjQ4M2MtLjAzNS0uMDgtLjA3LS4wOTctLjE1LS4wOTdoLTMuNjYxdi0uNTg0YzAtLjk1NS42NDUtMS4zOTcgMS40NzYtMS4zOTcuNDk2IDAgMS4wMzUuMjU2IDEuNDE1LjQ4Ni4wODkuMDUzLjE1LS4wMDguMTE1LS4wODhsLS43OTYtMS45MDFhLjI2LjI2IDAgMCAwLS4xMjQtLjEzM2MtLjM4OS0uMjAzLTEuMDI1LS4zOC0xLjY0NC0uMzgtMS44NzUgMC0yLjk1NCAxLjQzMi0yLjk1NCAzLjI1NHYuNzQzaC0xLjUwM2MtLjA4IDAtLjEyNC4wNDQtLjEyNC4xMjR2MS43NjhjMCAuMDguMDQ0LjEyNC4xMjQuMTI0aDEuNTAzdjYuNjY4YzAgLjA4LjA0NC4xMjMuMTI0LjEyM2gyLjI2NGMuMDggMCAuMTI0LS4wNDQuMTI0LS4xMjN2LTYuNjY4aDEuOTM2bDIuODEyIDYuMTEtMS41MTIgMy4zMjVjLS4wNDQuMDk4LjAwOS4xNDIuMDk3LjE0MmgyLjQxNGMuMDggMCAuMTE2LS4wMTguMTUtLjA5N2w0Ljk5Ny0xMS4zNTVjLjAzNS0uMDgtLjAwOS0uMTQxLS4wOTctLjE0MU01NC45NjQgOS4wNGMtMi44NjUgMC00LjgzNyAyLjAyNS00LjgzNyA0LjYxNiAwIDIuNTczIDEuOTcxIDQuNjE2IDQuODM3IDQuNjE2IDIuODU2IDAgNC44NDYtMi4wNDMgNC44NDYtNC42MTYgMC0yLjU5MS0xLjk5LTQuNjE2LTQuODQ2LTQuNjE2bS4wMDggNy4wNjVjLTEuMzcgMC0yLjM0My0xLjA0My0yLjM0My0yLjQ1IDAtMS40MDUuOTczLTIuNDQ5IDIuMzQzLTIuNDQ5IDEuMzYyIDAgMi4zMzUgMS4wNDMgMi4zMzUgMi40NSAwIDEuNDA2LS45NzMgMi40NS0yLjMzNSAyLjQ1bTMzLjU0MS02LjMzNGExLjI0IDEuMjQgMCAwIDAtLjQ4My0uNDcxIDEuNCAxLjQgMCAwIDAtLjY5My0uMTdxLS4zODQgMC0uNjkzLjE3YTEuMjQgMS4yNCAwIDAgMC0uNDg0LjQ3MXEtLjE3NC4zMDItLjE3NC42ODEgMCAuMzc1LjE3NC42NzcuMTc1LjMuNDg0LjQ3MXQuNjkzLjE3LjY5My0uMTcuNDgzLS40NzEuMTc1LS42NzZxMC0uMzgtLjE3NS0uNjgybS0uMjExIDEuMjQ3YTEgMSAwIDAgMS0uMzk0LjM5IDEuMTUgMS4xNSAwIDAgMS0uNTcxLjE0IDEuMTYgMS4xNiAwIDAgMS0uNTc2LS4xNCAxIDEgMCAwIDEtLjM5MS0uMzkgMS4xNCAxLjE0IDAgMCAxLS4xNC0uNTY2cTAtLjMxNi4xNC0uNTYydC4zOTEtLjM4OC41NzYtLjE0cS4zMiAwIC41Ny4xNC4yNTMuMTQxLjM5NS4zOXQuMTQyLjU2NXEwIC4zMTItLjE0Mi41Nm0tMTkuODM1LTUuNzhjLS44NSAwLTEuNDY4LjYtMS40NjggMS4zOTZzLjYxOSAxLjM5NyAxLjQ2OCAxLjM5N2MuODY2IDAgMS40ODUtLjYgMS40ODUtMS4zOTcgMC0uNzk2LS42MTktMS4zOTctMS40ODUtMS4zOTdtMTkuMzI5IDUuMTlhLjMxLjMxIDAgMCAwIC4xMzQtLjI2MnEwLS4xNjgtLjEzMi0uMjY2LS4xMzItLjA5OS0uMzgxLS4wOTloLS41ODh2MS4yMjloLjI4NHYtLjQ4OWguMTU0bC4zNzQuNDg5aC4zNWwtLjQxLS41MThhLjUuNSAwIDAgMCAuMjE1LS4wODRtLS40MjQtLjEwOWgtLjI2di0uM2guMjdxLjEyIDAgLjE4NC4wMzZhLjEyLjEyIDAgMCAxIC4wNjUuMTE2LjEyLjEyIDAgMCAxLS4wNjcuMTExLjQuNCAwIDAgMS0uMTkyLjAzN002OS42MDcgOS4yNTJoLTIuMjYzYy0uMDggMC0uMTI0LjA0NC0uMTI0LjEyNHY4LjU2YzAgLjA4LjA0NC4xMjMuMTI0LjEyM2gyLjI2M2MuMDggMCAuMTI0LS4wNDQuMTI0LS4xMjN2LTguNTZjMC0uMDgtLjA0NC0uMTI0LS4xMjQtLjEyNG0tMy4zMzMgNi42MDVhMi4xIDIuMSAwIDAgMS0xLjA1My4yNTdjLS43MjUgMC0xLjE4NS0uNDI1LTEuMTg1LTEuMzYydi0zLjQ4NGgyLjIxMWMuMDggMCAuMTI0LS4wNDQuMTI0LS4xMjRWOS4zNzZjMC0uMDgtLjA0NC0uMTI0LS4xMjQtLjEyNGgtMi4yMVY2Ljk0NGMwLS4wOTctLjA2My0uMTUtLjE1LS4wOGwtMy45NTQgMy4xMTNjLS4wNTMuMDQ0LS4wNy4wODgtLjA3LjE2djEuMDA3YzAgLjA4LjA0NC4xMjQuMTIzLjEyNGgxLjUzOXYzLjg1NWMwIDIuMDg3IDEuMjAzIDMuMDYgMi45MTggMy4wNi43NDMgMCAxLjQ2LS4xOTQgMS44ODQtLjQ0Mi4wNjItLjAzNS4wNy0uMDcuMDctLjEzM3YtMS42OGMwLS4wODgtLjA0NC0uMTE1LS4xMjMtLjA3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC45NSwwKSIvPjwvc3ZnPg=="
+        width="40px"
+        height="40px"
+        class="ml-8 mt-4"
+        alt="" />
+      <div class="main flex mt-3 ml-28">
+        <button><img
+          src="image.png"
+          alt=""
+          width="45px"
+          height="25px"
+          class="p-1 rounded-full mr-2" /></button>
+        <input
+          type="search"
+          class="rounded-full border text-white text-center pl-7"
+          placeholder="What do you want to play?"
+          style="
+            background-color: black;
+            width: 20rem;
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 15px;
+            background-color: #2a2a2a;
+          " />
+          <button>
+        <img
+          src="switch (1).png"
+          alt=""
+          width="40px"
+          height="30px"
+          class="ml-2" /></button>
+      </div>
+      <div class="but mt-3 font-bold mr-2">
+        <button class="bg-gray-600 mr-4 rounded-full p-4">Sign up</button>
+        <button class="bg-white rounded-full p-4">Login in</button>
+      </div>
+    </nav>
+    <main class="flex">
+      <div class="left bg-gray-600 pr-16 pb-24 "   >
+        <nav class="head flex text-xl p-2 mt-12">
+            <button>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtZW5jb3JlLWlkPSJpY29uIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGNsYXNzPSJTdmctc2MteXRrMjFlLTAgYm5lTGNFIj48cGF0aCBkPSJNMyAyMmExIDEgMCAwIDEtMS0xVjNhMSAxIDAgMCAxIDIgMHYxOGExIDEgMCAwIDEtMSAxek0xNS41IDIuMTM0QTEgMSAwIDAgMCAxNCAzdjE4YTEgMSAwIDAgMCAxIDFoNmExIDEgMCAwIDAgMS0xVjYuNDY0YTEgMSAwIDAgMC0uNS0uODY2bC02LTMuNDY0ek05IDJhMSAxIDAgMCAwLTEgMXYxOGExIDEgMCAxIDAgMiAwVjNhMSAxIDAgMCAwLTEtMXoiLz48L3N2Zz4="
+            alt=""
+            width="100px"
+            height="60px"
+            class="ml-4 mb-[2px]" /></button>
+          <p class="text-gray-500 mt-1 ml-8"><span class="whitespace-nowrap"> Your Library</span></p>
+          <button><img src="plus.png" alt=""  class="ml-24 w-8"  /></button>
+        </nav>
+        <div class="main">
+          <div class="car1 rounded-lg bg-black text-white ml-4 p-4 mt-10">
+            <p>Create your first play list</p>
+            <br />
+            <p>its easy, we'll help you</p>
+            <br />
+            <button class="bg-gray-400 text-black rounded-full p-2">
+              Create playlist
+            </button>
+          </div>
+        </div>
+         <div class="car2 rounded-lg bg-black text-white mt-12 ml-4 p-4">
+            <p>Lets find some podcasts to follow</p>
+            <br />
+            <p>we'll keep you updated on new episodes</p>
+            <br />
+            <button class="bg-gray-400 text-black rounded-full p-2">
+              Browse podcasts
+            </button>
+          </div>
+        <div class="mt-28 ml-4 ">
+            <div class="flex ">
+            <p>Legal</p>
+            <p class="ml-4">Safety & Privacy Center</p>
+            <p class="ml-4">Privacy Policy</p></div>
+            <div class="flex  mt-2">
+            <p class="">Cookies</p>
+            <p class="ml-4">About Ads</p>
+            <p class="ml-4">Accessibility</p></div>
+            <p class="mt-2 text-white font-bold">Cookies</p>
+            <button class="bg-gray-400 text-black rounded-full p-2 pr-6 text-center border mt-4 font-semibold"
+            style="background-image:url(globe.png) ;
+            background-repeat: no-repeat;
+            background-position:15px;
+            background-size: 20px;">
+            <span class="ml-8">
+              English</span>
+            </button>
+            <!--
+            <video class=" mt-16 w-full  rounded-lg" autoplay="{true}" controls>
+                <source src="file:///C:/Users/samee/OneDrive/Documents/Downloads/Spotify%20Short%20Ad.mp4" type="vedio/mp4">
+            </video><br>
+            <video class=" mt-16 w-full  rounded-lg" autoplay controls>
+                <source src="file:///C:/Imran/Yo_Yo_Honey_Singh__New_Songs_2021__-_Yo_Yo_Honey_Singh__All_Hit_Songs__Top_10_Badshah_Best_Songs(360p).mp4" type="vedio/mp4">
+            </video>-->
+        </div>
+        </div>
+      </div>
+      <div class="mid" >
+        <div class="mp3 text-white  bg-gray-800";>
+        <h3 class="text-xl font-bold ml-8 pt-8 ">Popular artists</h3><br>
+        <div class="artists text-center flex  ml-8" >
+            <div class="hover:bg-gray-500">
+            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="" width="200px" class="rounded-full"><br>
+            <p>Pritam</p><br>
+            <p>Artists</p> 
+        </div>
+        <div class="ml-8">
+            <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="" width="200px" class="rounded-full"><br>
+            <p>A.R.Rahman</p><br>
+            <p>Artists</p>
+      </div>
+      <div class="ml-8">
+            <img src="https://i.scdn.co/image/ab676161000051749107d8873f80a26b36f2418e" alt="" width="210px" class="rounded-full border"><br>
+            <p>Sachin-Jigar</p><br>
+            <p>Artists</p>
+      </div>
+      <div class="ml-8">
+            <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="" width="180px" class="rounded-full"><br>
+            <p>Arjith Singh</p><br>
+            <p>Artists</p>  
+      </div>
+      <div class="ml-8">
+            <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843"alt="" width="180px" class="rounded-full"><br>
+            <p>Anirudh Ravichandra</p><br>
+            <p>Artists</p>  
+      </div>
+      <div class="ml-8">
+            <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="" width="210px" class="rounded-full"><br>
+            <p>Atif Aslam</p><br>
+            <p>Artists</p>
+      </div>
+      <div class="ml-8">
+            <img src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551" alt="" width="180px" class="rounded-full"><br>
+            <p>Vishal Mishra</p><br>
+            <p>Artists</p> </div> 
+          <p class="-mt-14  mr-4 whitespace-nowrap font-bold"> <button>Show all</button></p>
+ 
+      </div>
+      <div class="albums  ml-8 pt-8 ">
+        <p class="font-bold text-xl">Popular albums</p>
+        <div class="mp-album mt-8 flex justify-around  text-center">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="" width="190px" class="rounded-lg">
+                <p class="uppercase">Glory</p>
+                <p>Yo Yo Honey Singh</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="" width="190px" class="rounded-lg">
+                <p >Aashiqui 2</p>
+                <p >Minthoon,Ankit Tiwari...</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt="" width="190px" class="rounded-lg">
+                <p >love hotel</p>
+                <p>leftovermax</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="" width="190px" class="rounded-lg">
+                <p >Making Memories</p>
+                <p>Karan Aujla,Ikky</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf" alt="" width="190px" class="rounded-lg">
+                <p >Aaj Ki Raat(From "Stree 2") </p>
+                <p>Sachin Jigar,Amitabh...</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="" width="190px" class="rounded-lg">
+                <p >Yeh Jawaani Hai Deewani</p>
+                <p>Pritam</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55" alt="" width="190px" class="rounded-lg">
+                <p >Jo Tum Mere Ho</p>
+                <p>Anuv Jain</p>
+            </div>
+            <p class="-mt-14  mr-4 whitespace-nowrap font-bold"> <button>Show all</button></p>
+        </div>
+      </div>
+      <div class="radio ml-8 pt-8">
+        <p class="font-bold text-xl">Popular radio</p>
+        <div class="mp-radio pt-8 flex justify-around text-center">
+            <div>
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en" alt="" width="190px" class="rounded-lg">
+                <p>With Atif Aslam,Sachin Jigra,...</p>
+            </div>
+            <div class="ml-4">
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en" alt="" width="190px" class="rounded-lg">
+                <p>With Karan Aujla,A P Dhillon ,Shub...</p>
+            </div>
+            <div>
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en" alt="" width="190px" class="rounded-lg">
+                <p>With Pritam ,Mohith Chauhan,Shaan..</p>
+            </div>
+            <div>
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en" alt="" width="190px" class="rounded-lg">
+                <p>With Anirudh Ravichandra , Harri..</p>
+            </div>
+            <div class="ml-4">
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/6DARBhWbfcS9E4yJzcliqQ/en" alt="" width="190px" class="rounded-lg">
+                <p>With Diljith Dosangh ,Shubh,Sidhu...</p>
+            </div>
+            <div>
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en-GB" alt="" width="190px" class="rounded-lg">
+                <p>With Honey Singh ,Guru, Talha Anjum...</p>
+            </div>
+            <div>
+                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en-GB" alt="" width="190px" class="rounded-lg">
+                <p>With A.R.Rehman , Veshal Shekar,...</p>
+            </div>        
+            <p class="mt-[-3.5rem]  mr-4 whitespace-nowrap font-bold"> <button> Show all </button></p>
+        </div>
+      </div>
+      <div class="feature ml-8 pt-8">
+        <p class="font-bold text-xl">Feature Charts</p>
+        <div class="mp3-feature pt-8 flex justify-around text-center overflow-hidden">
+            <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your weekly update of the most played...</p>
+            </div>
+            <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your weekly update of the most played...</p>
+            </div>
+            <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your weekly update of the most played...</p>
+            </div>
+             <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your daily update of the most played...</p>
+            </div>
+            <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your daily update of the most viral track...</p>
+            </div>
+            <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your daily update of the most viral track...</p>
+            </div>
+            <div>
+                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg" alt="" width="190px" class="rounded-lg">
+                <p>Your daily update of the most viral track...</p>
+            </div>
+            <p class="mt-[-2.5rem]  mr-4 whitespace-nowrap font-bold"> <button> Show all </button></p>
+        </div>
+      </div>
+
+      <div class="playlist ml-8 pt-8">
+        <p class="font-bold text-xl">Spotify Playlist</p>
+        <div class="mp-playlist pt-8 flex justify-around text-center text-balance pb-8">
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="" width="190px" class="rounded-lg">
+                <p>The perfect soundtrack tho...</p>
+            </div>
+            <div class="ml-8">
+                <img src="https://i.scdn.co/image/ab67706f000000024b04e77913de1fc2a4b819df" alt="" width="190px" class="rounded-lg">
+                <p>Cold Beer.Hot wings.Get rock.</p>
+            </div>
+            <div class="ml-8">
+                <img src="https://i.scdn.co/image/ab67706f00000002b0537010ede61af1f1ea3e3e" alt="" width="190px" class="rounded-lg">
+                <p>The perfect music for perfect food.</p>
+            </div>
+            <div class="ml-4">
+                <img src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377" alt="" width="190px" class="rounded-lg">
+                <p>Gettin' figging with <span>bana-na-na-nanana</span></p>
+            </div>
+            <div >
+                <img src="https://i.scdn.co/image/ab67706f000000024fd2f505388dffac41bf82d3" alt="" width="190px" class="rounded-lg">
+                <p>Gentle Indie songs for relaxed dinner.</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f00000002d497c6e15e12d5ff9df6e5f9" alt="" width="190px" class="rounded-lg">
+                <p>The gentle sound of some of the...</p>
+            </div>
+            <div>
+                <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" width="190px" class="rounded-lg">
+                <p>Soft electronic music for your...</p>
+            </div>
+            <p class="mt-[-2.5rem]  mr-4 whitespace-nowrap font-bold"> <button> Show all </button></p>
+        </div>        
+      </div>
+      <footer class="pl-8 ml-[0.2rem] pt-[3rem] bg-black">
+    <div class="legal-doc flex justify-between">
+        <ul>
+            <p class="font-bold text-xl mb-6 ">Company</p>
+            <li class="text-gray-400 font-semibold mt-2">About</li>
+            <li class="text-gray-400 font-semibold mt-2">Jobs</li>
+            <li class="text-gray-400 font-semibold mt-2">For the Record</li>
+        </ul>
+        <ul>
+            <p class="font-bold text-xl mb-6"> Communities</p>
+                <li class="text-gray-400 font-semibold mt-2">For Artists</li>
+                <li class="text-gray-400 font-semibold mt-2">Developers</li>
+                <li class="text-gray-400 font-semibold mt-2">Advertising</li>
+                <li class="text-gray-400 font-semibold mt-2">Investors</li>
+                <li class="text-gray-400 font-semibold mt-2">Vendors</li>
+        </ul>
+        <ul>
+        <p class="font-bold text-xl mb-6">Useful links</p>
+            <li class="text-gray-400 font-semibold mt-2">Support</li>
+            <li class="text-gray-400 font-semibold mt-2">Free Mobile App</li>
+        </ul>
+        <ul>
+            <p class="font-bold text-xl mb-6">Spotify Plans</p>
+            <li class="text-gray-400 font-semibold mt-2">Premium Indiviual</li>
+            <li class="text-gray-400 font-semibold mt-2">Premium Duo</li>
+            <li class="text-gray-400 font-semibold mt-2">Premium Family </li>
+            <li class="text-gray-400 font-semibold mt-2">Premium Student</li>
+            <li class="text-gray-400 font-semibold mt-2">Spotify Free</li>
+        </ul>
+        <span class="flex ">
+        <ul><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtZW5jb3JlLWlkPSJpY29uIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJTdmctc2MteXRrMjFlLTAgZENBdmxhIj48cGF0aCBkPSJNOCAxLjQ0YzIuMTM2IDAgMi4zODkuMDA5IDMuMjMzLjA0Ny43OC4wMzYgMS4yMDMuMTY2IDEuNDg1LjI3Ni4zNDguMTI4LjY2My4zMzIuOTIxLjU5OC4yNjYuMjU4LjQ3LjU3My41OTkuOTIxLjExLjI4Mi4yNC43MDYuMjc1IDEuNDg1LjAzOS44NDQuMDQ3IDEuMDk3LjA0NyAzLjIzM3MtLjAwOCAyLjM4OS0uMDQ3IDMuMjMyYy0uMDM1Ljc4LS4xNjYgMS4yMDQtLjI3NSAxLjQ4NmEyLjY1NCAyLjY1NCAwIDAgMS0xLjUxOCAxLjUxOGMtLjI4Mi4xMS0uNzA2LjI0LTEuNDg2LjI3NS0uODQzLjAzOS0xLjA5Ny4wNDctMy4yMzMuMDQ3cy0yLjM5LS4wMDgtMy4yMzItLjA0N2MtLjc4LS4wMzUtMS4yMDQtLjE2NS0xLjQ4Ni0uMjc1YTIuNDc3IDIuNDc3IDAgMCAxLS45MjEtLjU5OSAyLjQ3NyAyLjQ3NyAwIDAgMS0uNTk5LS45MmMtLjExLS4yODItLjI0LS43MDYtLjI3NS0xLjQ4Ni0uMDM4LS44NDQtLjA0Ny0xLjA5Ni0uMDQ3LTMuMjMycy4wMDktMi4zOS4wNDctMy4yMzNjLjAzNi0uNzguMTY2LTEuMjAzLjI3NS0xLjQ4NS4xMjktLjM0OC4zMzMtLjY2My41OTktLjkyMWEyLjQ5IDIuNDkgMCAwIDEgLjkyLS41OTljLjI4My0uMTEuNzA3LS4yNCAxLjQ4Ny0uMjc1Ljg0My0uMDM4IDEuMDk2LS4wNDcgMy4yMzItLjA0N0w4IDEuNDQxem0uMDAxLTEuNDQyYy0yLjE3MiAwLTIuNDQ1LjAxLTMuMjk4LjA0OC0uODU0LjA0LTEuNDM1LjE3Ni0xLjk0My4zNzNhMy45MjggMy45MjggMCAwIDAtMS40MTcuOTIzYy0uNDA3LjQtLjcyMi44ODMtLjkyMyAxLjQxNy0uMTk4LjUwOC0uMzMzIDEuMDktLjM3MiAxLjk0MkMuMDEgNS41NTIgMCA1LjgyNiAwIDhjMCAyLjE3Mi4wMSAyLjQ0NS4wNDggMy4yOTguMDQuODUzLjE3NCAxLjQzMy4zNzIgMS45NDEuMi41MzQuNTE2IDEuMDE3LjkyMyAxLjQxNy40LjQwNy44ODMuNzIyIDEuNDE3LjkyMy41MDguMTk4IDEuMDkuMzMzIDEuOTQyLjM3Mi44NTIuMDM5IDEuMTI2LjA0OCAzLjI5OS4wNDggMi4xNzIgMCAyLjQ0NS0uMDEgMy4yOTgtLjA0OC44NTMtLjA0IDEuNDMzLS4xNzQgMS45NC0uMzcyYTQuMDg3IDQuMDg3IDAgMCAwIDIuMzQtMi4zNGMuMTk5LS41MDguMzM0LTEuMDkuMzczLTEuOTQyLjAzOS0uODUxLjA0OC0xLjEyNS4wNDgtMy4yOThzLS4wMS0yLjQ0NS0uMDQ4LTMuMjk4Yy0uMDQtLjg1My0uMTc0LTEuNDMzLS4zNzItMS45NGEzLjkyNCAzLjkyNCAwIDAgMC0uOTIzLTEuNDE4QTMuOTI4IDMuOTI4IDAgMCAwIDEzLjI0LjQyYy0uNTA4LS4xOTctMS4wOS0uMzMzLTEuOTQyLS4zNzEtLjg1MS0uMDQxLTEuMTI1LS4wNS0zLjI5OC0uMDVsLjAwMS0uMDAxeiIvPjxwYXRoIGQ9Ik04IDMuODkyYTQuMTA4IDQuMTA4IDAgMSAwIDAgOC4yMTYgNC4xMDggNC4xMDggMCAwIDAgMC04LjIxNnptMCA2Ljc3NWEyLjY2OCAyLjY2OCAwIDEgMSAwLTUuMzM1IDIuNjY4IDIuNjY4IDAgMCAxIDAgNS4zMzV6bTQuMjctNS45NzhhLjk2Ljk2IDAgMSAwIDAtMS45Mi45Ni45NiAwIDAgMCAwIDEuOTJ6Ii8+PC9zdmc+" alt="" 
+          width="40px"
+          height="30px"
+          class="bg-pink-600 rounded-full mr-8" ></ul>
+        <ul><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtZW5jb3JlLWlkPSJpY29uIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJTdmctc2MteXRrMjFlLTAgZENBdmxhIj48cGF0aCBkPSJNMTMuNTQgMy44ODlhMi45NjggMi45NjggMCAwIDAgMS4zMzMtMS42ODMgNS45MzcgNS45MzcgMCAwIDEtMS45MjkuNzM4IDIuOTkyIDIuOTkyIDAgMCAwLS45OTYtLjcwNiAyLjk4IDIuOTggMCAwIDAtMS4yMTgtLjI1NCAyLjkyIDIuOTIgMCAwIDAtMi4xNDMuODg5IDIuOTI5IDIuOTI5IDAgMCAwLS44ODkgMi4xNWMwIC4yMTIuMDI3LjQ0Mi4wOC42OTFhOC40NzUgOC40NzUgMCAwIDEtMy40ODQtLjkzMkE4LjUzNiA4LjUzNiAwIDAgMSAxLjUzMiAyLjU0YTIuOTkzIDIuOTkzIDAgMCAwLS40MTMgMS41MjNjMCAuNTE5LjEyIDEgLjM2MSAxLjQ0NS4yNC40NDUuNTcuODA1Ljk4OCAxLjA4YTIuODczIDIuODczIDAgMCAxLTEuMzczLS4zNzR2LjA0YzAgLjcyNS4yMyAxLjM2NS42OSAxLjkyYTIuOTcgMi45NyAwIDAgMCAxLjczOSAxLjA0OCAyLjkzNyAyLjkzNyAwIDAgMS0xLjM2NS4wNTYgMi45NCAyLjk0IDAgMCAwIDEuMDYzIDEuNSAyLjk0NSAyLjk0NSAwIDAgMCAxLjc3LjYwMyA1Ljk0NCA1Ljk0NCAwIDAgMS0zLjc3IDEuMzAyYy0uMjQzIDAtLjQ4NC0uMDE2LS43MjItLjA0OEE4LjQxNCA4LjQxNCAwIDAgMCA1LjE1IDE0Yy45MDUgMCAxLjc2My0uMTIgMi41NzItLjM2MS44MS0uMjQgMS41MjYtLjU3IDIuMTQ3LS45ODhhOS4wNDQgOS4wNDQgMCAwIDAgMS42ODMtMS40NmMuNS0uNTU2LjkxMS0xLjE1NSAxLjIzNC0xLjc5OGE5LjUzMiA5LjUzMiAwIDAgMCAuNzM4LTEuOTg4IDguNDE3IDguNDE3IDAgMCAwIC4yNDYtMi40MjkgNi4xNzcgNi4xNzcgMCAwIDAgMS41MDgtMS41NjNjLS41Ni4yNDktMS4xNC40MDctMS43MzguNDc2eiIvPjwvc3ZnPg==" alt="" 
+          width="40px"
+          height="30px"
+          class="bg-white rounded-full mr-8" ></ul>
+        <ul><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtZW5jb3JlLWlkPSJpY29uIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJTdmctc2MteXRrMjFlLTAgZFluYVBJIj48cGF0aCBkPSJNMTYgOGE4IDggMCAxIDAtOS4yNSA3LjkwM3YtNS41OUg0LjcxOVY4SDYuNzVWNi4yMzdjMC0yLjAwNSAxLjE5NC0zLjExMiAzLjAyMi0zLjExMi44NzUgMCAxLjc5LjE1NiAxLjc5LjE1NlY1LjI1aC0xLjAwOGMtLjk5NCAwLTEuMzA0LjYxNy0xLjMwNCAxLjI1VjhoMi4yMTlsLS4zNTUgMi4zMTNIOS4yNXY1LjU5QTguMDAyIDguMDAyIDAgMCAwIDE2IDh6Ii8+PC9zdmc+" alt="" 
+          width="40px"
+          height="30px"
+          class="bg-blue-600 rounded-full mr-20"></ul></span>
+    </div>
+    <p class="border ml-4 mr-4 mt-12"></p>
+
+    <p class="ml-4 mt-20 font-bold text-gray-500 text-xl pb-6">© 2024 Spotify AB</p>
+    </footer>
+      </div> 
+    </main>
+    
+  </body>
+</html>

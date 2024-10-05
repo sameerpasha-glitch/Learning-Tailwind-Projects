@@ -15,13 +15,13 @@ function valid() {
   }
 }
 
-/*submit.addEventListener("click", valid);
-
+submit.addEventListener("click", valid);
+/*
 let google = document.getElementById("g1");
 
 google.addEventListener("click", function () {
   window.location.href = "https://www.google.com";
-});*/
+});
 test("Container1 has extra large text size", () => {
   const container = document.querySelector(".container1");
   expect(container.classList.contains("text-xl")).toBe(true);
@@ -34,4 +34,4 @@ test("container1 has centered text", () => {
   const container = document.querySelector(".container1");
   expect(container).toBeTruthy();
   expect(container.classList.contains("text-center")).toBeTruthy();
-});
+});*/

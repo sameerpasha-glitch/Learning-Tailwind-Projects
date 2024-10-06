@@ -10,6 +10,7 @@ function valid() {
 
   if (mail === "sameertam008@gmail.com" || pass === "12345678") {
     alert("Login Successful");
+    window.location.href = "file:///C:/project/Tailwind-Css/spotify.html";
   } else {
     alert("Wrong Password & username");
   }

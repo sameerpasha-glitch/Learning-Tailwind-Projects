@@ -6,6 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spotify.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="">
@@ -36,13 +39,23 @@
             background-position: 15px;
             background-color: #2a2a2a;
           " />
-          <button>
+          <button id="switch">
         <img
+          id="mode"
           src="switch (1).png"
           alt=""
           width="40px"
           height="30px"
           class="ml-2" /></button>
+          <button>
+        <img
+          id="mode1"
+          src="switch (2).png"
+          alt=""
+          width="40px"
+          height="30px"
+          class="hidden" /></button>
+          
       </div>
       <div class="but mt-3 font-bold mr-2">
         <button class="bg-gray-600 mr-4 rounded-full p-4">Sign up</button>
@@ -100,9 +113,9 @@
             <span class="ml-8">
               English</span>
             </button>
-            <!--
-            <video class=" mt-16 w-full  rounded-lg" autoplay="{true}" controls>
-                <source src="file:///C:/Users/samee/OneDrive/Documents/Downloads/Spotify%20Short%20Ad.mp4" type="vedio/mp4">
+          
+            <!--<video class=" mt-16 w-full  rounded-lg" autoplay controls>
+                <source src="https://youtu.be/aw9Rb9y2m8A" type="vedio/mp4">
             </video><br>
             <video class=" mt-16 w-full  rounded-lg" autoplay controls>
                 <source src="file:///C:/Imran/Yo_Yo_Honey_Singh__New_Songs_2021__-_Yo_Yo_Honey_Singh__All_Hit_Songs__Top_10_Badshah_Best_Songs(360p).mp4" type="vedio/mp4">
@@ -114,80 +127,149 @@
         <div class="mp3 text-white  bg-gray-800";>
         <h3 class="text-xl font-bold ml-8 pt-8 ">Popular artists</h3><br>
         <div class="artists text-center flex  ml-8" >
-            <div class="hover:bg-gray-500">
-            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="" width="200px" class="rounded-full"><br>
+            <div class="hover:cursor-pointer group">
+            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="" width="200px" class="rounded-full "><br>
             <p>Pritam</p><br>
-            <p>Artists</p> 
-        </div>
-        <div class="ml-8">
+            <p>Artists</p>
+            <button id="art-1" class="hidden group-hover:block ...">
+              <audio id="ar-1" src="Aaj Ki Party Bajrangi Bhaijaan 128 Kbps.mp3"></audio>
+              <img id="play" src="play-button (1).png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;">
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden">
+            </button>
+            </div>
+        <div class="ml-8 hover:cursor-pointer group">
             <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="" width="200px" class="rounded-full"><br>
             <p>A.R.Rahman</p><br>
             <p>Artists</p>
+            <button id="art-2" class="hidden group-hover:block ...">
+              <audio id="ar-2" src="Agar Tum Saath Ho(PagalWorld.com.sb).mp3"></audio>
+            <img id="play" src="play-button (1).png" alt="" width="45px" 
+              style="margin-top: -11rem; margin-left: 4.5rem;" >
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden"></button>
       </div>
-      <div class="ml-8">
+      <div class="ml-8 hover:cursor-pointer group">
             <img src="https://i.scdn.co/image/ab676161000051749107d8873f80a26b36f2418e" alt="" width="210px" class="rounded-full border"><br>
             <p>Sachin-Jigar</p><br>
             <p>Artists</p>
+            <button id="art-3" class="hidden group-hover:block ...">
+              <audio id="ar-3" src="Aaj Ki Raat(PagalWorld.com.sb).mp3"></audio>
+              <img id="play" src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -11rem; margin-left: 4.5rem;">
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden">
+            </button>
       </div>
-      <div class="ml-8">
+      <div class="ml-8 hover:cursor-pointer group">
             <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="" width="180px" class="rounded-full"><br>
             <p>Arjith Singh</p><br>
-            <p>Artists</p>  
+            <p>Artists</p>
+            <button id="art-4" class="hidden group-hover:block">
+              <audio id="ar-4" src="Jawan Chaleya (Hindi)(PagalWorld.com.sb).mp3"></audio>
+              <img id="play" src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -11rem; margin-left: 4.5rem;">
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden">
+            </button>  
       </div>
-      <div class="ml-8">
+      <div class="ml-8 hover:cursor-pointer group" >
             <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843"alt="" width="180px" class="rounded-full"><br>
             <p>Anirudh Ravichandra</p><br>
             <p>Artists</p>  
+            <button id="art-5" class="hidden group-hover:block">
+              <audio id="ar-5" src="Fear(PagalWorld.com.sb).mp3"></audio>
+              <img id="play" src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -11rem; margin-left: 4.5rem;">
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden">
+            </button>
       </div>
-      <div class="ml-8">
+      <div class="ml-8 hover:cursor-pointer group">
             <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="" width="210px" class="rounded-full"><br>
             <p>Atif Aslam</p><br>
             <p>Artists</p>
+            <button id="art-6" class="hidden group-hover:block">
+              <audio id="ar-6" src="Jaane Jaa(PagalWorld.com.sb).mp3"></audio>
+              <img id="play" src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -11rem; margin-left: 4.5rem;">
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden">
+            </button>
       </div>
-      <div class="ml-8">
+      <div class="ml-8 hover:cursor-pointer group">
             <img src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551" alt="" width="180px" class="rounded-full"><br>
-            <p>Vishal Mishra</p><br>
+            <button id="art-7" class="hidden group-hover:block">
+              <audio id="ar-7" src="Khoobsurat(PagalWorld.com.sb).mp3"></audio>
+              <img id="play" src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;">
+              <img id="pause" src="pause.png" alt="" width="45px" 
+                style="margin-top: -11rem; margin-left: 4.5rem;" class="hidden">
+              </button>
+            <p class="">Vishal Mishra</p><br>
             <p>Artists</p> </div> 
-          <p class="-mt-14  mr-4 whitespace-nowrap font-bold"> <button>Show all</button></p>
- 
+            <p class="-mt-14  mr-4 whitespace-nowrap font-bold"> <button>Show all</button></p>
+            </button>
       </div>
       <div class="albums  ml-8 pt-8 ">
         <p class="font-bold text-xl">Popular albums</p>
         <div class="mp-album mt-8 flex justify-around  text-center">
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="" width="190px" class="rounded-lg">
                 <p class="uppercase">Glory</p>
                 <p>Yo Yo Honey Singh</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="" width="190px" class="rounded-lg">
                 <p >Aashiqui 2</p>
                 <p >Minthoon,Ankit Tiwari...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e021e63de6489803c2b39e7f8e5" alt="" width="190px" class="rounded-lg">
                 <p >love hotel</p>
                 <p>leftovermax</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="" width="190px" class="rounded-lg">
                 <p >Making Memories</p>
                 <p>Karan Aujla,Ikky</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf" alt="" width="190px" class="rounded-lg">
                 <p >Aaj Ki Raat(From "Stree 2") </p>
                 <p>Sachin Jigar,Amitabh...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="" width="190px" class="rounded-lg">
                 <p >Yeh Jawaani Hai Deewani</p>
                 <p>Pritam</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55" alt="" width="190px" class="rounded-lg">
                 <p >Jo Tum Mere Ho</p>
                 <p>Anuv Jain</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
             <p class="-mt-14  mr-4 whitespace-nowrap font-bold"> <button>Show all</button></p>
         </div>
@@ -195,33 +277,54 @@
       <div class="radio ml-8 pt-8">
         <p class="font-bold text-xl">Popular radio</p>
         <div class="mp-radio pt-8 flex justify-around text-center">
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en" alt="" width="190px" class="rounded-lg">
                 <p>With Atif Aslam,Sachin Jigra,...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div class="ml-4">
+            <div class="ml-4 hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en" alt="" width="190px" class="rounded-lg">
                 <p>With Karan Aujla,A P Dhillon ,Shub...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en" alt="" width="190px" class="rounded-lg">
                 <p>With Pritam ,Mohith Chauhan,Shaan..</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en" alt="" width="190px" class="rounded-lg">
                 <p>With Anirudh Ravichandra , Harri..</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div class="ml-4">
+            <div class="ml-4 hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/6DARBhWbfcS9E4yJzcliqQ/en" alt="" width="190px" class="rounded-lg">
                 <p>With Diljith Dosangh ,Shubh,Sidhu...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en-GB" alt="" width="190px" class="rounded-lg">
                 <p>With Honey Singh ,Guru, Talha Anjum...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en-GB" alt="" width="190px" class="rounded-lg">
                 <p>With A.R.Rehman , Veshal Shekar,...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>        
             <p class="mt-[-3.5rem]  mr-4 whitespace-nowrap font-bold"> <button> Show all </button></p>
         </div>
@@ -229,33 +332,54 @@
       <div class="feature ml-8 pt-8">
         <p class="font-bold text-xl">Feature Charts</p>
         <div class="mp3-feature pt-8 flex justify-around text-center overflow-hidden">
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your weekly update of the most played...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your weekly update of the most played...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your weekly update of the most played...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-             <div>
+             <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your daily update of the most played...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your daily update of the most viral track...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your daily update of the most viral track...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg" alt="" width="190px" class="rounded-lg">
                 <p>Your daily update of the most viral track...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
             <p class="mt-[-2.5rem]  mr-4 whitespace-nowrap font-bold"> <button> Show all </button></p>
         </div>
@@ -264,33 +388,54 @@
       <div class="playlist ml-8 pt-8">
         <p class="font-bold text-xl">Spotify Playlist</p>
         <div class="mp-playlist pt-8 flex justify-around text-center text-balance pb-8">
-            <div>
+            <div class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="" width="190px" class="rounded-lg">
                 <p>The perfect soundtrack tho...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div class="ml-8">
+            <div class="ml-8 hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f000000024b04e77913de1fc2a4b819df" alt="" width="190px" class="rounded-lg">
                 <p>Cold Beer.Hot wings.Get rock.</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div class="ml-8">
+            <div class="ml-8 hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f00000002b0537010ede61af1f1ea3e3e" alt="" width="190px" class="rounded-lg">
                 <p>The perfect music for perfect food.</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div class="ml-4">
+            <div class="ml-4 hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377" alt="" width="190px" class="rounded-lg">
                 <p>Gettin' figging with <span>bana-na-na-nanana</span></p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div >
+            <div  class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f000000024fd2f505388dffac41bf82d3" alt="" width="190px" class="rounded-lg">
                 <p>Gentle Indie songs for relaxed dinner.</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div  class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f00000002d497c6e15e12d5ff9df6e5f9" alt="" width="190px" class="rounded-lg">
                 <p>The gentle sound of some of the...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
-            <div>
+            <div  class="hover:cursor-pointer group">
                 <img src="https://i.scdn.co/image/ab67706f000000029c46546f7e00afd77eeebded" alt="" width="190px" class="rounded-lg">
                 <p>Soft electronic music for your...</p>
+                <button class="hidden group-hover:block">
+              <img src="play-button (1).png" alt="" width="45px"
+              style="margin-top: -7rem; margin-left: 4.5rem;"></button>
             </div>
             <p class="mt-[-2.5rem]  mr-4 whitespace-nowrap font-bold"> <button> Show all </button></p>
         </div>        
@@ -299,30 +444,30 @@
     <div class="legal-doc flex justify-between">
         <ul>
             <p class="font-bold text-xl mb-6 ">Company</p>
-            <li class="text-gray-400 font-semibold mt-2">About</li>
-            <li class="text-gray-400 font-semibold mt-2">Jobs</li>
-            <li class="text-gray-400 font-semibold mt-2">For the Record</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer ">About</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer ">Jobs</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer ">For the Record</li>
         </ul>
         <ul>
             <p class="font-bold text-xl mb-6"> Communities</p>
-                <li class="text-gray-400 font-semibold mt-2">For Artists</li>
-                <li class="text-gray-400 font-semibold mt-2">Developers</li>
-                <li class="text-gray-400 font-semibold mt-2">Advertising</li>
-                <li class="text-gray-400 font-semibold mt-2">Investors</li>
-                <li class="text-gray-400 font-semibold mt-2">Vendors</li>
+                <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">For Artists</li>
+                <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Developers</li>
+                <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Advertising</li>
+                <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Investors</li>
+                <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Vendors</li>
         </ul>
         <ul>
         <p class="font-bold text-xl mb-6">Useful links</p>
-            <li class="text-gray-400 font-semibold mt-2">Support</li>
-            <li class="text-gray-400 font-semibold mt-2">Free Mobile App</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Support</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Free Mobile App</li>
         </ul>
         <ul>
             <p class="font-bold text-xl mb-6">Spotify Plans</p>
-            <li class="text-gray-400 font-semibold mt-2">Premium Indiviual</li>
-            <li class="text-gray-400 font-semibold mt-2">Premium Duo</li>
-            <li class="text-gray-400 font-semibold mt-2">Premium Family </li>
-            <li class="text-gray-400 font-semibold mt-2">Premium Student</li>
-            <li class="text-gray-400 font-semibold mt-2">Spotify Free</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Premium Indiviual</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Premium Duo</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Premium Family </li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Premium Student</li>
+            <li class="text-gray-400 font-semibold mt-2 hover:underline hover:cursor-pointer">Spotify Free</li>
         </ul>
         <span class="flex ">
         <ul><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtZW5jb3JlLWlkPSJpY29uIiByb2xlPSJpbWciIGFyaWEtaGlkZGVuPSJ0cnVlIiB2aWV3Qm94PSIwIDAgMTYgMTYiIGNsYXNzPSJTdmctc2MteXRrMjFlLTAgZENBdmxhIj48cGF0aCBkPSJNOCAxLjQ0YzIuMTM2IDAgMi4zODkuMDA5IDMuMjMzLjA0Ny43OC4wMzYgMS4yMDMuMTY2IDEuNDg1LjI3Ni4zNDguMTI4LjY2My4zMzIuOTIxLjU5OC4yNjYuMjU4LjQ3LjU3My41OTkuOTIxLjExLjI4Mi4yNC43MDYuMjc1IDEuNDg1LjAzOS44NDQuMDQ3IDEuMDk3LjA0NyAzLjIzM3MtLjAwOCAyLjM4OS0uMDQ3IDMuMjMyYy0uMDM1Ljc4LS4xNjYgMS4yMDQtLjI3NSAxLjQ4NmEyLjY1NCAyLjY1NCAwIDAgMS0xLjUxOCAxLjUxOGMtLjI4Mi4xMS0uNzA2LjI0LTEuNDg2LjI3NS0uODQzLjAzOS0xLjA5Ny4wNDctMy4yMzMuMDQ3cy0yLjM5LS4wMDgtMy4yMzItLjA0N2MtLjc4LS4wMzUtMS4yMDQtLjE2NS0xLjQ4Ni0uMjc1YTIuNDc3IDIuNDc3IDAgMCAxLS45MjEtLjU5OSAyLjQ3NyAyLjQ3NyAwIDAgMS0uNTk5LS45MmMtLjExLS4yODItLjI0LS43MDYtLjI3NS0xLjQ4Ni0uMDM4LS44NDQtLjA0Ny0xLjA5Ni0uMDQ3LTMuMjMycy4wMDktMi4zOS4wNDctMy4yMzNjLjAzNi0uNzguMTY2LTEuMjAzLjI3NS0xLjQ4NS4xMjktLjM0OC4zMzMtLjY2My41OTktLjkyMWEyLjQ5IDIuNDkgMCAwIDEgLjkyLS41OTljLjI4My0uMTEuNzA3LS4yNCAxLjQ4Ny0uMjc1Ljg0My0uMDM4IDEuMDk2LS4wNDcgMy4yMzItLjA0N0w4IDEuNDQxem0uMDAxLTEuNDQyYy0yLjE3MiAwLTIuNDQ1LjAxLTMuMjk4LjA0OC0uODU0LjA0LTEuNDM1LjE3Ni0xLjk0My4zNzNhMy45MjggMy45MjggMCAwIDAtMS40MTcuOTIzYy0uNDA3LjQtLjcyMi44ODMtLjkyMyAxLjQxNy0uMTk4LjUwOC0uMzMzIDEuMDktLjM3MiAxLjk0MkMuMDEgNS41NTIgMCA1LjgyNiAwIDhjMCAyLjE3Mi4wMSAyLjQ0NS4wNDggMy4yOTguMDQuODUzLjE3NCAxLjQzMy4zNzIgMS45NDEuMi41MzQuNTE2IDEuMDE3LjkyMyAxLjQxNy40LjQwNy44ODMuNzIyIDEuNDE3LjkyMy41MDguMTk4IDEuMDkuMzMzIDEuOTQyLjM3Mi44NTIuMDM5IDEuMTI2LjA0OCAzLjI5OS4wNDggMi4xNzIgMCAyLjQ0NS0uMDEgMy4yOTgtLjA0OC44NTMtLjA0IDEuNDMzLS4xNzQgMS45NC0uMzcyYTQuMDg3IDQuMDg3IDAgMCAwIDIuMzQtMi4zNGMuMTk5LS41MDguMzM0LTEuMDkuMzczLTEuOTQyLjAzOS0uODUxLjA0OC0xLjEyNS4wNDgtMy4yOThzLS4wMS0yLjQ0NS0uMDQ4LTMuMjk4Yy0uMDQtLjg1My0uMTc0LTEuNDMzLS4zNzItMS45NGEzLjkyNCAzLjkyNCAwIDAgMC0uOTIzLTEuNDE4QTMuOTI4IDMuOTI4IDAgMCAwIDEzLjI0LjQyYy0uNTA4LS4xOTctMS4wOS0uMzMzLTEuOTQyLS4zNzEtLjg1MS0uMDQxLTEuMTI1LS4wNS0zLjI5OC0uMDVsLjAwMS0uMDAxeiIvPjxwYXRoIGQ9Ik04IDMuODkyYTQuMTA4IDQuMTA4IDAgMSAwIDAgOC4yMTYgNC4xMDggNC4xMDggMCAwIDAgMC04LjIxNnptMCA2Ljc3NWEyLjY2OCAyLjY2OCAwIDEgMSAwLTUuMzM1IDIuNjY4IDIuNjY4IDAgMCAxIDAgNS4zMzV6bTQuMjctNS45NzhhLjk2Ljk2IDAgMSAwIDAtMS45Mi45Ni45NiAwIDAgMCAwIDEuOTJ6Ii8+PC9zdmc+" alt="" 
@@ -344,6 +489,6 @@
     </footer>
       </div> 
     </main>
-    
+    <script src="spotify.js" defer></script>
   </body>
 </html>

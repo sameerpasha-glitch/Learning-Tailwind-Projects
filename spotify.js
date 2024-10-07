@@ -62,6 +62,13 @@ setupAudioPlayer("art-4", "ar-4");
 setupAudioPlayer("art-5", "ar-5");
 setupAudioPlayer("art-6", "ar-6");
 setupAudioPlayer("art-7", "ar-7");
+setupAudioPlayer("art-8", "ar-8");
+setupAudioPlayer("art-9", "ar-9");
+setupAudioPlayer("art-10", "ar-10");
+setupAudioPlayer("art-11", "ar-11");
+setupAudioPlayer("art-12", "ar-12");
+setupAudioPlayer("art-13", "ar-13");
+setupAudioPlayer("art-14", "ar-14");
 
 // Get the mode and mode1 elements (buttons)
 const mode = document.getElementById("mode");

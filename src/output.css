@@ -780,16 +780,12 @@ video {
   margin-left: 33rem;
 }
 
-.ml-\[44rem\] {
-  margin-left: 44rem;
+.ml-\[38rem\] {
+  margin-left: 38rem;
 }
 
 .ml-\[4rem\] {
   margin-left: 4rem;
-}
-
-.ml-\[50rem\] {
-  margin-left: 50rem;
 }
 
 .ml-\[5rem\] {
@@ -830,6 +826,10 @@ video {
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mr-80 {
+  margin-right: 20rem;
 }
 
 .mr-\[15rem\] {
@@ -912,76 +912,16 @@ video {
   margin-top: 1rem;
 }
 
-.mt-\[38\.5rem\] {
-  margin-top: 38.5rem;
-}
-
-.mt-\[38rem\] {
-  margin-top: 38rem;
-}
-
-.mt-\[40rem\] {
-  margin-top: 40rem;
-}
-
-.mt-\[43rem\] {
-  margin-top: 43rem;
-}
-
-.mt-\[45rem\] {
-  margin-top: 45rem;
-}
-
-.mt-\[46rem\] {
-  margin-top: 46rem;
-}
-
-.mt-\[8rem\] {
-  margin-top: 8rem;
-}
-
-.mt-\[22rem\] {
-  margin-top: 22rem;
-}
-
-.mt-\[24rem\] {
-  margin-top: 24rem;
-}
-
-.mt-\[26rem\] {
-  margin-top: 26rem;
-}
-
 .mt-\[28rem\] {
   margin-top: 28rem;
-}
-
-.ml-\[36rem\] {
-  margin-left: 36rem;
-}
-
-.mt-\[32rem\] {
-  margin-top: 32rem;
-}
-
-.mt-\[33rem\] {
-  margin-top: 33rem;
-}
-
-.mt-\[3rem\] {
-  margin-top: 3rem;
 }
 
 .mt-\[34rem\] {
   margin-top: 34rem;
 }
 
-.ml-\[37rem\] {
-  margin-left: 37rem;
-}
-
-.ml-\[38rem\] {
-  margin-left: 38rem;
+.mt-\[8rem\] {
+  margin-top: 8rem;
 }
 
 .block {
@@ -1034,6 +974,10 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-start {
@@ -1236,6 +1180,11 @@ video {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
 .bg-sky-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity));
@@ -1328,6 +1277,10 @@ video {
 
 .pb-24 {
   padding-bottom: 6rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .pb-4 {
@@ -1488,30 +1441,6 @@ video {
 
 .pt-\[3rem\] {
   padding-top: 3rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pb-28 {
-  padding-bottom: 7rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pt-\[4rem\] {
-  padding-top: 4rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .text-left {

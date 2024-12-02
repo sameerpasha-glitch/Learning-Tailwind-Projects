@@ -1,5 +1,6 @@
 {
   "files.autoSave": "onFocusChange",
   "terminal.explorerKind": "both",
-  "docwriter.style": "Google"
+  "docwriter.style": "Google",
+  "liveServer.settings.port": 5501
 }
